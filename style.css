@@ -1,0 +1,10 @@
+table,
+tr,
+td,
+th {
+    border: 1px, black solid;
+}
+
+tr:nth-child(even) {
+    background-color: red;
+}
