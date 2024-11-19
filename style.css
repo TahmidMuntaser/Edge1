@@ -58,6 +58,22 @@ div.sec{
 }
 
 
+.btn2{
+    background-color: rgb(209, 86, 49);
+    color: wheat;
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+
+.btn2:hover{
+    background-color: rgb(180, 59, 22);
+}
+
 
 /* .sec, h2 {
     color: wheat;
