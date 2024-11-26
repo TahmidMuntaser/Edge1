@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    
+      <div class="h-screen flex items-center justify-center container mx-auto mt-10">
+        <table class="table-auto border-collapse border border-gray-400 w-1/4 h-1/2">
+            <tbody>
+                <tr>
+                    <td class="border border-gray-300 p-4 bg-red-600" colspan="4">
+                        <input type="text" id="result" class="w-full h-12 text-right p-2" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 bg-red-600 text-white"><input type="button" value="%" onclick="dis('%')" class="w-full h-16"></td>
+                    <td class="border border-gray-300  bg-red-600 text-white "><input type="button" value="C" onclick="clr()" class="w-full h-16"></td>
+                    <td class="border border-gray-300  bg-red-600 text-white" colspan="2"><input type="button" value="Del" onclick="del()" class="w-full h-16"></td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300  bg-red-600 text-white"><input type="button" value="7" onclick="dis('7')" class="w-full h-16"></td>
+                    <td class="border border-gray-300 bg-red-600 text-white"><input type="button" value="8" onclick="dis('8')" class="w-full h-16"></td>
+                    <td class="border border-gray-300  bg-red-600 text-white"><input type="button" value="9" onclick="dis('9')" class="w-full h-16"></td>
+                    <td class="border border-gray-300  bg-red-600 text-white"><input type="button" value="/" onclick="dis('/')" class="w-full h-16"></td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 bg-red-600 text-white "><input type="button" value="4" onclick="dis('4')" class="w-full h-16"></td>
+                    <td class="border border-gray-300 bg-red-600 text-white"><input type="button" value="5" onclick="dis('5')" class="w-full h-16"></td>
+                    <td class="border border-gray-300 bg-red-600 text-white "><input type="button" value="6" onclick="dis('6')" class="w-full h-16"></td>
+                    <td class="border border-gray-300 bg-red-600 text-white "><input type="button" value="*" onclick="dis('*')" class="w-full h-16"></td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 bg-red-600 text-white"><input type="button" value="1" onclick="dis('1')" class="w-full h-16"></td>
+                    <td class="border border-gray-300 bg-red-600 text-white "><input type="button" value="2" onclick="dis('2')" class="w-full h-16"></td>
+                    <td class="border border-gray-300 bg-red-600 text-white"><input type="button" value="3" onclick="dis('3')" class="w-full h-16"></td>
+                    <td class="border border-gray-300 bg-red-600 text-white"><input type="button" value="-" onclick="dis('-')" class="w-full h-16"></td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 bg-red-600 text-white"><input type="button" value="0" onclick="dis('0')" class="w-full h-16"></td>
+                    <td class="border border-gray-300 bg-red-600 text-white"><input type="button" value="." onclick="dis('.')" class="w-full h-16"></td>
+                    <td class="border border-gray-300 bg-red-600 text-white "><input type="button" value="=" onclick="solve()" class="w-full h-16"></td>
+                    <td class="border border-gray-300 bg-red-600 text-white"><input type="button" value="+" onclick="dis('+')" class="w-full h-16"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+
+
+
+    <script src="cal.js"></script>
+</body>
+</html>
