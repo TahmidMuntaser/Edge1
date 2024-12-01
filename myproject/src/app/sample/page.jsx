@@ -1,5 +1,12 @@
+import { Header } from "./component/header";
+import { Footer } from "./component/footer";
+
 export default function Home() {
     return (
-        <h1>Hello world</h1>
+        <>
+            <Header/>
+            <Footer/>
+        </>
+       
     )
 }
