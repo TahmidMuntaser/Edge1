@@ -11,7 +11,29 @@ export default function Home() {
         <>
             <Header/>
             <Background/> 
-            <PopularDestinations/>
+            
+            <PopularDestinations>
+
+                <Card
+                    image="/beachPhoto2.jpg"
+                    title="Tropical Beaches"
+                    description="Relax on white sands and enjoy crystal-clear waters."
+                />
+
+                <Card
+                    image="/beachPhoto2.jpg"
+                    title="Tropical Beaches"
+                    description="Relax on white sands and enjoy crystal-clear waters."
+                />
+
+                <Card
+                    image="/mountain2.jpg"
+                    title="Mountain"
+                    description="Explore and create adventure."
+                />
+
+            </PopularDestinations>
+
             <PricingPlans/>
             <ContactUs/>
             <Footer/>
