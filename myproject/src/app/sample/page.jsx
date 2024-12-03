@@ -4,6 +4,7 @@ import { Background } from "./component/background";
 import { ContactUs } from "./component/contactus";
 import { PricingPlans } from "./component/pricingplans";
 import { PopularDestinations } from "./component/populardestinations";
+import { Card } from "./component/card";
 
 export default function Home() {
     return (

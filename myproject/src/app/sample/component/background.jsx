@@ -2,6 +2,7 @@ export function Background() {
     return (
         <div
             style={{
+                // Image:
                 backgroundImage: "url('/beachPhoto2.jpg')", 
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -20,4 +21,4 @@ export function Background() {
             </div>
         </div>
     );
-}
+}   
