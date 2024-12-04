@@ -1,3 +1,4 @@
+import { NavLink } from './navlink';
 export function Header(){
     return (
         <>
