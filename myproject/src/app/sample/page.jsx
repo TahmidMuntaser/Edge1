@@ -5,11 +5,18 @@ import { ContactUs } from "./component/contactus";
 import { PricingPlans } from "./component/pricingplans";
 import { PopularDestinations } from "./component/populardestinations";
 import { Card } from "./component/card";
+import { NavLink } from "./component/navlink";
 
 export default function Home() {
     return (
         <>
-            <Header/>
+            <Header>
+                <NavLink link="#">Home</NavLink>
+                <NavLink link="#">Destinations</NavLink>
+                <NavLink link="#">Pricing</NavLink>
+                <NavLink link="#">Contact</NavLink>
+            </Header>
+            
             <Background/> 
             
             <PopularDestinations>
