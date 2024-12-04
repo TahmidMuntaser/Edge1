@@ -7,10 +7,10 @@ export function Header(){
                     Travel Explorer
                 </div>
                 <nav className="flex space-x-3 md:space-x-5 pr-2 md:pr-3">
-                    <a href="#" className="text-white text-lg md:text-xl hover:text-blue-200 hover:scale-105 transition-transform duration-300">Home</a>
-                    <a href="#" className="text-white text-lg md:text-xl hover:text-blue-200 hover:scale-105 transition-transform duration-300">Destinations</a>
-                    <a href="#" className="text-white text-lg md:text-xl hover:text-blue-200 hover:scale-105 transition-transform duration-300">Pricing</a>
-                    <a href="#" className="text-white text-lg md:text-xl hover:text-blue-200 hover:scale-105 transition-transform duration-300">Contact</a>
+                    <NavLink name="Home" link="#" />
+                    <NavLink name="Destinations" link="#" />
+                    <NavLink name="Pricing" link="#" />
+                    <NavLink name="Contact" link="#" />
                 </nav>
             </div>
         </>
