@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 export function CalanderInput({ label }) {
     const [isFocused, setIsFocused] = useState(false);
     const [currentDate, setCurrentDate] = useState(new Date(2025, 0, 1));
+    const [selectedDay, setSelectedDay] = useState('');
 
     const handleFocus = () => {
         setIsFocused(true);
@@ -24,6 +25,10 @@ export function CalanderInput({ label }) {
         setCurrentDate(new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1));
     };
 
+    const handleDayChange = (event) => {
+        setSelectedDay(event.target.value);
+    };
+
     const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
     const startDay = currentDate.getDay();
@@ -40,13 +45,20 @@ export function CalanderInput({ label }) {
         calendarDays.push(i);
     }
 
+    const selectedDayNumber = parseInt(selectedDay, 10);
+
     return (
         <div className="mb-4">
             <input
-                placeholder={label}
+                type="number"
+                value={selectedDay}
+                onChange={handleDayChange}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                placeholder={label}
                 className="w-1/2 p-2 border border-gray-300 rounded"
+                min="1"
+                max={daysInMonth}
             />
             {isFocused && (
                 <div className="w-3/4 mt-4 p-4 border border-slate-600 rounded bg-white">
@@ -76,7 +88,10 @@ export function CalanderInput({ label }) {
                             </div>
                         ))}
                         {calendarDays.map((day, index) => (
-                            <div key={index} className="p-2 border border-gray-200">
+                            <div
+                                key={index}
+                                className={`p-2 border border-gray-200 ${day === selectedDayNumber ? 'bg-blue-200' : ''}`}
+                            >
                                 {day}
                             </div>
                         ))}
